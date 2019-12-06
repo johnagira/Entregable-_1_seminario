@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Simon Dice</title>
+    <style>
+        body {
+            margin: 0;
+            background: #dedede;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .gameboard {
+            height: 100vh;
+            width: 100vh;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            max-height: 60vh;
+            max-width: 60vh;
+        }
+
+        .color {
+            width: 50%;
+            height: 50%;
+            display: inline-block;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: left;
+        }
+
+        .celeste {
+            background: #22a6b3;
+        }
+
+        .celeste.light {
+            background: #7ed6df;
+        }
+
+        .amarillo {
+            background: #deec0e;
+        }
+
+        .amarillo.light {
+            background: #e5ee6c;
+        }
+
+        .rojo {
+            background: #fa0707;
+        }
+
+        .rojo.light {
+            background: #e75b5b;
+        }
+
+        .verde {
+            background: #0dda1e;
+        }
+
+        .verde.light {
+            background: #58dc5f;
+        }
+
+        .btn.btn-primary {  
+            width: 70px;
+            height: 50px;
+            background: #8f029c;
+            color: #eee8eb;
+            font-size: 0.8rem;
+            position: fixed;
+            top: calc(50% - -150px);
+            left: calc(50% - 200px);
+        }
+        body{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <h1>Simon Dice</h1>
+
+        <div>
+            <div class="gameboard">
+            <div id="celeste" class="color celeste left" data-color="celeste"></div>
+            <div id="amarillo" class="color amarillo right" data-color="amarillo"></div>
+            <div id="rojo" class="color rojo left" data-color="rojo"></div>
+            <div id="verde" class="color verde right" data-color="verde"></div>
+            <button id="btnEmpezar" class="btn btn-primary" onclick="empezarJuego()">Inicio</button>
+            
+        </div>
+        
+        
+    
+
+    <script src="juego.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    
+</body>
+
+</html>
